@@ -77,7 +77,7 @@ void m_putchar(stack_t **head, unsigned int line_counter);
 void m_pstr(stack_t **head, unsigned int line_counter);
 void m_rotl(stack_t **head, unsigned int line_counter);
 void m_rotr(stack_t **head, __attribute__((unused)) unsigned int line_counter);
-void addnode(stack_t **head, int n);
+void add_node(stack_t **head, int n);
 void addqueue(stack_t **head, int n);
 void m_queue(stack_t **head, unsigned int line_counter);
 void m_stack(stack_t **head, unsigned int line_counter);

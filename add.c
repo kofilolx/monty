@@ -12,8 +12,7 @@ void m_add(stack_t **head, unsigned int line_counter)
 	stack_t *h;
 	int len;
 	int tmp;
-<<<<<<< HEAD
-
+	
 	len  = 0;
 	h = *head;
 	while (h)
@@ -34,31 +33,4 @@ void m_add(stack_t **head, unsigned int line_counter)
 	h->next->n = tmp;
 	*head = h->next;
 	free(h);
-=======
-
-	len  = 0;
-
-    h = *head;
-    while (h)
-    {
-        h = h->next;
-        len++;
-    }
-
-    if (len < 2)
-    {
-        fprintf(stderr, "L%d: can't add, stack too short\n", line_counter);
-        fclose(bus.file);
-        free(bus.content);
-        free_stack(*head);
-
-        exit(EXIT_FAILURE);
-    }
-
-    h = *head;
-    tmp = h->n + h->next->n;
-    h->next->n = tmp;
-    *head = h->next;
-    free(h);
->>>>>>> 67e836a755cd923db8383f0541cc037bfb848f12
 }
