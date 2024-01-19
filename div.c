@@ -7,8 +7,7 @@
 */
 void m_div(stack_t **head, unsigned int line_counter)
 {
-	stack_t *h;
-    
+	stack_t *h;    
 	int len = 0;
 	int tmp;
 	
